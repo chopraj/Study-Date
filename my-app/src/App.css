@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+* {
+  font-family: 'Kalam', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(rgb(223, 226, 229), #e9ecef);
+  height: 100%;
+  line-height: 1.6;
+  background-color: white;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+img {
+  width: 100%;
+}
+.navigation-section .navbar-brand {
+  font-size: 17px;
+  color: #212529;
+}
+.navigation-section .navbar-nav li {
+  margin: 0px 0px 0px 15px;
+}
+.navigation-section .navbar-nav .nav-item a {
+  color: #212529;
+  font-size: 1rem;
+}
+/* Navbar Hover Effect*/
+.navigation-section .navbar-nav .nav-link::before {
+  content: '';
+  height: 0px;
+  width: 0px;
+  background-color: #212529;
+  position: absolute;
+  bottom: 15px;
+}
+/* Navbar Lines on Hover*/
+.navigation-section .navbar-nav .nav-link:hover:before {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background-color: #212529;
+  position: absolute;
+  bottom: 15px;
+  transition: 0.3s;
+}
+.navigation-section .navbar-nav .nav-item a:hover {
+  color: #19547b !important;
+  transition: 0s;
+}
+/* Keeping elements white*/
+.navigation-section .navbar-brand:hover {
+  color: #212529;
+  transition: 0s;
+}
+.navigation-section .navbar-brand:visited {
+  color: #212529;
+  transition: 0s;
+}
+.navigation-section .navbar-nav .nav-item a:visited {
+  color: #212529;
+}
+.navigation-section {
+  background-color: rgba(113, 116, 119, 1);
+  margin: 0px;
+  border-bottom: solid 1.5px #19547b;
+}
+/* Landing */
+.landing {
+  background-image: url(../../frontend/files/Desk_Wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+}
+.landing .inner {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-family: 'Arimo', italic;
+}
+.lead {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Kalam', sans-serif;
+}
+.btn {
+  cursor: pointer;
+  font-size: 19px;
+  border-radius: 10px;
+  margin: 1rem;
+  color: white;
+  background-color: transparent;
+  border-color: #19547b;
+  font-family: 'Poppins', sans-serif;
+  width: 150px;
+  box-shadow: 2px 4px #141313;
+  outline: none;
+}
+.btn:hover {
+  background-color: #19547b;
+  transition: 0.3s;
+  border-color: #19547b;
+  color: white;
+}
+.btn:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+  background-color: #19547b;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.container3 {
+  max-width: 1100px;
+  height: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container5 {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title2 {
+  color: #19547b;
+}
+.form-group {
+  margin: 1.2rem 0;
+}
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.target {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+.my-1 {
+  color: white;
+}
+.linktext {
+  color: #19547b;
+  text-decoration: none;
+}
+.linktext :hover {
+  color: #19547b !important;
+  transition: 0;
+  text-decoration: none;
+}
+.hero {
+  height: 100%;
+  width: 100%;
+}
+.form-box {
+  width: 380px;
+  height: 420px;
+  position: relative;
+  margin: 6% auto;
+  background: rgba(113, 116, 119, 0.9);
+  padding: 5px;
+  overflow: hidden;
+  top: -5px;
+  border-radius: 10px;
+}
+.button-box {
+  font-size: 0.98rem;
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 15px 1px rgb(68, 78, 78);
+  border-radius: 10px;
+}
+.togglebtn {
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn {
+  color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #19547b, rgb(05, 64, 103), #19547b);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.input-group {
+  top: 120px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+.-btn {
+  color: white;
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background: linear-gradient(to right, #19547b, rgb(05, 64, 103), #19547b);
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+}
+#login {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}
+::placeholder {
+  color: black;
+}
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+#loginbutton {
+  margin-top: 64px;
+}
+.check-box {
+  margin-left: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+.tutorregistration {
+  position: relative;
+  left: 17.5%;
+}
+.post-form-header {
+  padding: 0.5rem;
+  background: #19547b;
+}
+hola {
+  margin: 1rem;
+}
+@media (max-width: 700px) {
+  .lead {
+    font-size: 1.2rem;
+  }
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container4 {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.btn2 {
+  display: inline-block;
+  background: rgba(113, 116, 119, 0.9);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+  border-radius: 2px;
+}
+.btn2:hover {
+  background-color: #19547b;
+  transition: 0.3s;
+  border-color: #19547b;
+  color: white;
+  text-decoration: none;
+}
+.btn2:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+  background-color: #19547b;
+}
+.text {
+  margin: 1rem 0;
+  color: black;
+}
+/* Alerts */
+.alert {
+  padding: 0.8rem;
+  text-align: center;
+  margin: 1rem;
+  opacity: 0.9;
+  background: #28a745;
+  color: #333;
+}
+.alert-succ {
+  background: #28a745 !important;
+}
+.alert-fail {
+  background: #dc3545 !important;
+}
+.medium {
+  font-size: 1.6rem;
+}
+.goodbtn {
+  display: inline-block;
+  background: rgba(113, 116, 119, 0.9);
+  color: black;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+  border-radius: 2px;
+}
+.goodbtn:hover {
+  background-color: #76b947;
+  color: white;
+  transition: 0.5s;
+}
+.discussionbtn {
+  margin: 1rem 0;
+}
+.badbtn {
+  display: inline-block;
+  background: rgba(113, 116, 119, 0.9);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+  border-radius: 2px;
+  font-family: 'Kalam';
+}
+.badbtn:hover {
+  background-color: #df362d;
+  color: white;
+  transition: 0.5s;
+}
+.round-img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.profile {
+  background: rgb(163, 163, 163);
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+.viewprofilebtn {
+  display: inline-block;
+  background: #19547b;
+  color: white;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+  border-radius: 4px;
+}
+.viewprofilebtn a:hover {
+  background: #2375ac;
+  transition: 0s;
+  color: white !important;
+  text-decoration: none;
+}
+.profile-info a:hover {
+  background: #2375ac;
+  transition: 0s;
+  color: white !important;
+  text-decoration: none;
+}
+.listofskills {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: black;
+}
+.text-primary {
+  color: #19547b;
+}
+.profile {
+  list-style: none;
+}
+.fas {
+  color: #19547b;
+}
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  margin: 1rem 0;
+  background: white;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.post-child {
+  text-align: center;
+}
+.post-form-header {
+  padding: 0.2rem;
+  padding-bottom: 0;
+  background: #19547b;
+  color: white;
+}
+.hola {
+  margin: 1rem 0;
+}
+.ooga {
+  margin: 1rem 0;
+  font: inherit;
+}
+post-img {
+  width: 150px;
+}
+.discussionbtn {
+  margin: 1rem 0;
+}
+.btn3 {
+  display: inline-block;
+  background: rgba(113, 116, 119, 0.9);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+.btn3:hover {
+  background-color: #2375ac;
+  transition: 0.3s;
+  border-color: #2375ac;
+  color: white;
+  text-decoration: none;
+}
+.btn3:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+  background-color: #19547b;
+}
+#textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+.viewprofilebtn:hover {
+  background: #2375ac;
+  transition: 0s;
+  color: white !important;
+  text-decoration: none;
+}
+.deletebtn {
+  display: inline-block;
+  background: #df362d;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+.deletebtn:hover {
+  background: rgb(208, 39, 20);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.deletebtn:hover .fas {
+  color: white;
+  transition: 0.5s;
+}
+.deletebtn .fas {
+  color: #333;
+}
+.post-date {
+  color: rgb(150, 150, 150);
+  font-size: 0.8rem;
+  margin-bottom: 0rem;
+}
+.post-username {
+  margin-top: 0.4rem;
+}
+.name-banner {
+  text-align: center;
+}
+.coloring {
+  color: #19547b;
+}
+.tutor-nameplate {
+  font-family: 'Arimo';
+  font-size: 1.5rem;
+}
+.deletebtn-buffer {
+  margin-top: 2rem;
+}
