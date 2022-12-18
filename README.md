@@ -3,8 +3,3 @@ Web application made to help students get connected with the resources they need
 
 # TechStack
 Developed with Express, Node.js, React, and MongoDB
-
-# Demos
-Website hosted with Heroku => https://studydate.herokuapp.com/
-
-Link to Youtube video touring the project => *coming soon*
